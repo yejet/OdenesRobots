@@ -1,14 +1,13 @@
 tasks:
-  Ordenar robot y recolectar informacion:
-    robotTaskName: Ordenar robot y recolectar informacion
   Run all tasks:
-    shell: python -m robot --report NONE --outputdir output --logtitle "Task log"
+    shell:
+      python -m robot --report NONE --outputdir output --logtitle "Task log"
       tasks.robot
 condaConfigFile: conda.yaml
 ignoreFiles:
-- .gitignore
+  - .gitignore
 artifactsDir: output
 PATH:
-- .
+  - .
 PYTHONPATH:
-- .
+  - .
